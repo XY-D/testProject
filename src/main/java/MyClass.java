@@ -20,6 +20,9 @@ public class MyClass {
         Pattern p = Pattern.compile(pattern);
         Matcher m = p.matcher(solution);
         while (m.find()){
+
+
+
             markdown = m.group(0);
             Matcher matcher_title = Pattern.compile("\\[(.*?)\\]").matcher(markdown);
             String title = matcher_title.find() ? matcher_title.group(1):"";
